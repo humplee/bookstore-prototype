@@ -1,0 +1,29 @@
+extends ../layout
+
+block content
+    .page-header
+        h3 Profile Information
+    body
+    form.form-horizontal(action='/bookmanager/addbooktodb', method='POST')
+        input(type='hidden', name='_csrf', value=_csrf)
+        .form-group
+            label.col-sm-3.control-label(for='name') Name
+            .col-sm-7
+                input.form-control(type='text', name='name', id='name')
+        .form-group
+            label.col-sm-3.control-label(for='price') Price
+            .col-sm-7
+                input.form-control(type='text', name='price', id='price')
+        .form-group
+            label.col-sm-3.control-label(for='stock') Stock
+            .col-sm-7
+                input.form-control(type='text', name='stock', id='stock')
+        .form-group
+            .col-sm-offset-3.col-sm-4
+                button.btn.btn.btn-primary(type='submit')
+                    i.fa.fa-pencil
+                    | Add book
+
+
+
+

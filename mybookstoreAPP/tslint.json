@@ -1,0 +1,58 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "class-name": true,
+    "comment-format":
+      true,
+    "no-unused-expression": false,
+
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "no-console": false,
+    "prefer-for-of": false,
+
+    "one-line": [
+      true,
+      "check-open-brace"
+    ],
+    "no-var-keyword": true,
+    "quotemark": [
+      true,
+      "double",
+      "avoid-escape"
+    ],
+    "ordered-imports":false,
+    "object-literal-sort-keys":false,
+    "no-void-expression": false,
+    "no-unused-variable":false,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "whitespace":
+      false
+    ,
+    "only-arrow-functions":false,
+    "typedef-whitespace":
+      false,
+
+    "no-internal-module": true,
+    "no-trailing-whitespace": true,
+    "no-null-keyword": true,
+    "prefer-const": true,
+    "jsdoc-format": true,
+    "jsx-boolean-value":false,
+    "no-shadowed-variable": false,
+    "no-var-requires": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+
+}

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 bookstore manager
+  p.lead A sample bookstore
+  hr
+  .row
+    .col-sm-6
+      h2 show orders
+      p Show all existing orders
+      p
+        a.btn.btn-default(href='/bookmanager/showOrderPage', role='button') show orders
+    .col-sm-6
+      h2 show books
+      p Show all existing books
+      p
+        a.btn.btn-default(href='/bookmanager/managebookpage', role='button') manage existing books
+    .col-sm-6
+      h2 manage books
+      p Add or delete a book
+      p
+        a.btn.btn-default(href='/bookmanager/addbookpage', role='button') add books
+

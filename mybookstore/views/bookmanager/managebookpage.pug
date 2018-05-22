@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    .page-header
+        h3 Stock Information
+    head
+        title= title
+    body
+        ul
+            for book1 in bookinfo
+                p ---------------------------------
+                a       name:
+                a= book1.book1.name
+                a       price:
+                a= book1.book1.price
+                a       stock:
+                a= book1.book1.stock
+                p ---------------------------------
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+1. start mongod
+2. npm start mybookstore(server)
+3. npm start mybookstoreAPP
